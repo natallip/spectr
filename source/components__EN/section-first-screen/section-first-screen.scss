@@ -1,0 +1,85 @@
+.section-first {
+  height: 100vh;
+  padding-top: 226px;
+  background: url("/images/digital.svg") no-repeat 50% 122px;  
+  background-size: 1255px 560px;
+  @include media1366 {
+    background-position: 50% 102px;
+    padding-top: 196px;
+    background-size: 928px 414px;
+  }
+  @include media1088 {
+    background-size: 624px;
+    padding-top: 226px;
+  }
+}
+.home {
+  position: relative;
+  @include media768 {
+    padding-left: 100px;
+  }
+  &__title {
+    font-family: 'AkzidenzGroteskPro-Ext';
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 88px;
+    @include media1366 {
+      font-size: 62px;
+      line-height: 77px;
+    }
+    @include media1088 {
+      font-size: 54px;
+      line-height: 67px;
+    }
+    @include media768 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 32px;
+    }
+  }
+  &__descr {
+    font-size: 25px;
+    line-height: 37px;
+    color: $textGray;
+    padding-bottom: 10px;
+    &-title {
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      @include media1366 {
+        margin-bottom: 30px;
+      }      
+    } 
+    @include media1366 {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 7px;      
+    }   
+    @include media1088 {
+      padding-left: 12px;
+    }
+    @include media768 {
+      font-size: 18px;
+      line-height: 27px;
+      padding-left: 0;
+      max-width: 180px;
+    }
+  }
+}
+.logo {
+  position: fixed;
+  z-index: 2;
+  width: 140px;
+  height: 14px; 
+  margin-top: -196px; 
+  @include media1366 {
+    margin-top: -168px;
+  }
+  @include media1088 {
+    margin-top: -198px;
+  }
+  @include media768 {
+    left: 50%;
+    transform: translateX(calc(-50% - 14px));
+    margin-top: -206px;
+  }
+}

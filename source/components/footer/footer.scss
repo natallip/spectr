@@ -1,0 +1,62 @@
+.footer {
+  width: 100%;
+  padding-bottom: 36px;
+  &__wrap {
+    @include media768 {
+      padding-left: 32px;
+    }
+  }
+  &__links {
+    display: flex;
+    margin-bottom: 26px;
+    
+  }
+  &__link {
+    margin-right: 44px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-size: 16px;
+      line-height: 22px;
+      color: $colorLightGray;      
+    }
+    &:after {
+      content: '\203A';
+      font-size: 22px;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      right: -12px;
+      color: $colorLightGray;      
+    }
+    &:hover a, &:hover:after {
+      color: $accent;
+    }   
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+  &__socials-item {
+    margin-right: 29px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media1366 {
+      margin-right: 28px;
+    }
+    @include media768 {
+      margin-right: 20px;      
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $colorLightGray;      
+    }
+    &:hover svg {
+      fill: $accent;
+    }
+  }
+}

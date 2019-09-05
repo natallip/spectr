@@ -1,0 +1,16 @@
+mixin section-services
+	section.section.section-services#section-services
+		.container
+			.services.row.align-items-end
+				.col-xl-5.col-lg-6.col-md-7.col-ms-12.offset-xl-1
+					.services__img
+						img(src="./images/services.svg", alt="image")
+					h2.services__title Вместе мы можем создать историю вашего бизнес успеха
+					p.services__descr Наша миссия - создавать продукты для клиентов. Предоставляем готовые решения для рынка и поддерживаем их.
+				.col-xl-4.col-lg-5.col-md-5.col-ms-12.offset-lg-1
+					ul.services__list
+						each item, i in data.services
+							li.services__item
+								.services__item-number= `0${i + 1}`
+								.services__item-title= item.title
+								.services__item-text= item.text

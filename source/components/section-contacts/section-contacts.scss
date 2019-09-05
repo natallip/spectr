@@ -1,0 +1,63 @@
+.section-contacts {
+  height: 100vh;   
+}
+.contacts {
+  &__wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% - 20px));
+    @include media768 {
+      margin-left: 32px;
+    }
+  }
+  &__wrap-box {
+    flex-grow: 2;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100vh;        
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 62px;
+    font-family: 'AkzidenzGroteskPro-Ext';
+    color: $textWhite;
+    margin-bottom: 48px;
+    @include media1088 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    @include media1088 {
+      margin-bottom: 22px;
+    }
+    @include media768 {
+      font-size: 26px;
+      line-height: 34px;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__descr {
+    font-size: 48px;
+    line-height: 62px;
+    font-family: 'AkzidenzGroteskPro-Ext'; 
+    @include media1088 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    @include media768 {
+      font-size: 26px;
+      line-height: 34px;
+    }   
+    a {
+      display: block;
+      color: $textGray;
+    }
+  }
+}
+.section-footer {
+  flex-grow: 0;
+}

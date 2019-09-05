@@ -1,0 +1,17 @@
+extends static/pug/template
+include components/components
+
+block variables
+	- var title = 'Spectr.digital'
+	- var description = 'description'
+	- var keywords = 'keywords'
+
+block content
+
+	div.page__wrapper#fullpage
+		+header
+		+section-first-screen
+		+section-services
+		+section-works       
+		+section-contacts  
+	

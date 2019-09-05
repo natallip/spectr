@@ -1,0 +1,12 @@
+mixin footer
+	footer.footer
+		.footer__wrap
+			ul.footer__links
+				each item in data.footerLinks
+					li.footer__link
+						a(href= item.link)= item.name 		
+			ul.footer__socials
+				each item in data.socials
+					li.footer__socials-item
+						a(href= item.link)
+							+svg(item.icon)                  

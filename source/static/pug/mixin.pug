@@ -1,0 +1,17 @@
+mixin svg (name, mod)
+	- mod = mod || ' '
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="css/symbol/sprite.svg#" + name)
+
+mixin work (item)
+	li.works__item
+		.works__item-descr
+			h3.works__item-title= item.title
+			p.works__item-text= item.descr
+		ul.works__item-links
+			li.works__item-link
+				a(href= item.vk) vk
+			li.works__item-link
+				a(href= item.inst) inst
+			li.works__item-link
+				a(href= item.fb) fb		
