@@ -5,10 +5,7 @@
   &__wrap {
     position: relative;
     top: 50%;
-    transform: translateY(calc(-50% - 20px));
-    @include media768 {
-      margin-left: 32px;
-    }
+    transform: translateY(calc(-50% - 20px));    
   }
   &__wrap-box {
     flex-grow: 2;
@@ -44,6 +41,7 @@
     font-size: 48px;
     line-height: 62px;
     font-family: 'AkzidenzGroteskPro-Ext'; 
+    transition: .3s ease-in-out;
     @include media1088 {
       font-size: 32px;
       line-height: 42px;
@@ -55,7 +53,11 @@
     a {
       display: block;
       color: $textGray;
-    }
+      &:hover {
+        color: $accent;
+        transition: .3s ease-in-out;
+      }
+    }    
   }
 }
 .section-footer {

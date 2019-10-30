@@ -1,4 +1,5 @@
 .section-services {
+  padding-top: 50px;
   margin-bottom: 418px;
   @include media1366 {
     margin-bottom: 265px;
@@ -10,25 +11,7 @@
     margin-bottom: 174px;
   }
 }
-.services { 
-  // @include media768 {
-  //   padding-left: 32px;
-  // } 
-  &__img {
-    margin-top: 20px;
-    margin-bottom: 54px;
-    @include media1366 {
-      max-width: 398px;
-      margin-bottom: 20px;
-      margin-top: 0;
-    }
-    @include media768 {
-      padding-left: 32px;
-    }
-    img {
-      width: 100%;
-    }
-  }
+.services {   
   &__title {
     font-family: 'AkzidenzGroteskPro-Ext';
     font-size: 48px;
@@ -42,12 +25,12 @@
     @include media1088 {
       font-size: 32px;
       line-height: 42px;
+      max-width: 362px;
     }
     @include media768 {
       font-size: 26px;
       line-height: 130%;
-      margin-bottom: 28px;
-      padding-left: 32px;
+      margin-bottom: 28px;      
     }
   }
   &__descr {
@@ -60,14 +43,13 @@
     }
     @include media1088 {
       width: 362px;
-      //padding-top: 10px;
     }
     @include media768 {
       font-size: 18px;
-      line-height: 27px;
+      line-height: 27px;      
       width: auto;
-      margin-bottom: 56px;
-      padding-left: 32px;
+      max-width: 320px;
+      margin-bottom: 56px;     
     }
   }
   &__list {
@@ -75,7 +57,7 @@
       padding-left: 12px;
     }
     @include media768 {
-      padding-left: 100px;
+      padding-left: 60px;
     }
   }
   &__item {
@@ -90,28 +72,34 @@
   }
   &__item-number {
     font-family: 'AkzidenzGroteskPro-Ext';
-    font-size: 14px;
+    font-size: 16px;
     line-height: 100%;
     color: $textGray;
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: -145px;
-    &:before {
-      content: '\2014';
-      color: $textGray;
-      position: absolute;
-      left: -18px;
-    }
+    // &:before {
+    //   content: '\2014';
+    //   color: $textGray;
+    //   position: absolute;
+    //   left: -18px;
+    //   @include media768 {
+    //     display: none;
+    //   }
+    // }
     @include media1366 {
       right: -36px;
     }
     @include media768 {
+      top: 12px;
       right: 0;
       left: -50px;
+      //font-size: 16px;
     }
   }
   &__item-title {
     font-family: 'AkzidenzGroteskPro-Ext';
+    text-transform: uppercase;
     font-size: 48px;
     line-height: 62px;
     color: $textLightGray;
@@ -142,4 +130,12 @@
       max-width: 220px;
     }
   }
+}
+.stickyBlock {
+  position: relative;
+  z-index: 10;
+  max-width: 505px;
+}
+.stickyBlock-wrap {
+  position: relative;
 }

@@ -1,13 +1,17 @@
 mixin section-first-screen
 	section.section.section-first#section-first
 		.container
-			.logo
-				img(src="./images/logo.svg", alt="Spectr logo")
+			.row
+				.col-xl-5.col-lg-6.col-md-7.col-sm-12.offset-xl-1
+					.logo
+						img(src="./images/logo.svg", alt="Spektr logo")
 			.home.row.align-items-end
 				.col-xl-5.col-lg-6.col-md-7.col-sm-12.offset-xl-1
-					h1.home__title
-						.title Создаём продукты, которые работают.
+					.home__title
+						h1.title 
+							|Создаём продукты, которые 
+							span#blink работают
 				.col-xl-4.col-lg-5.col-md-4.col-sm-12.offset-lg-1
 					.home__descr
 						.home__descr-title SMM & WEB
-						.home__descr-text Полный цикл от начала до успеха.	
+						.home__descr-text Полный цикл от начала до успеха	

@@ -9,9 +9,12 @@ mixin work (item)
 			h3.works__item-title= item.title
 			p.works__item-text= item.descr
 		ul.works__item-links
-			li.works__item-link
-				a(href= item.vk) vk
-			li.works__item-link
-				a(href= item.inst) inst
-			li.works__item-link
-				a(href= item.fb) fb		
+			if (item.vk)
+				li.works__item-link
+					a(href= item.vk target="_blank") vk
+			if (item.inst)		
+				li.works__item-link
+					a(href= item.inst target="_blank") inst
+			if (item.fb)		
+				li.works__item-link
+					a(href= item.fb target="_blank") fb		

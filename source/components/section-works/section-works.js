@@ -1,52 +1,66 @@
-export const showMore = function () {  
-  $("#more").on("click", function (event) {
-    event.preventDefault();    
-    $(".works__more").show();
-    $(this).hide();    
-  }); 
+export const translate = function () { 
   
-  $(window).on('scroll',function() {
-    const el = $('#imgWorks');
+  let sticky = function() {    
+    const obj = $('.stickyBlock');
+    let topOffset = obj.offset().top - 100;
+    let heightSection = $('.services').height() - $('.stickyBlock').height();
+
+    $(window).scroll(function() {
+      let scrollTop = $(window).scrollTop();
+      
+      if (scrollTop >= topOffset) {   
+        obj.css({
+          top: 100,
+          position: 'fixed'
+        });
+      }
+  
+      if (scrollTop < topOffset) {      
+        obj.css({
+          top: 0,
+          position: 'relative',
+        });        
+      }
+      
+      if (scrollTop + 100 > (topOffset + heightSection)) {             
+        obj.css({
+          top: '',
+          bottom: 0,
+          position: 'absolute',
+        });
+      }    
+    })
+  }  
+  
+  let animation = function () {
+    $(window).on('scroll',function() {
+      const el = $('.works__img');        
+      scrollImg(el);        
+    });
     
-    parallaxScroll(el);
-    //changeBg(el);
-  });
+    function scrollImg(el) {
+      let $scrolled = $('html, body').scrollTop();
+      let elementOffset = el.offset().top; 
+      let height = $(window).height(); 
+      let distance = elementOffset - $scrolled;      
+      
+      if (distance < height) {      
+        let shift = distance * .5;
+        el.css('transform', 'translateX(' + shift + 'px)');
+      } else {
+        el.css('transform', 'translateX(0px)');
+      }       
+    }
+  }
  
-  function parallaxScroll(el) {
-    let $scrolled = $('html, body').scrollTop();
-    let elementOffset = el.offset().top; 
-    let height = $(window).height(); 
-    let distance = elementOffset - $scrolled;   
-    
-    //el.css('transform', 'translateX(50vh)');
-
-    if (distance < height && distance + 200 > 0) {      
-      let shift = -$scrolled*.2 + el.width()/3;
-      // console.log('shift', shift);
-      // console.log('$scrolled', $scrolled);
-      el.css('transform', 'translateX(' + shift + 'px)');
-    } else {
-      el.css('transform', 'translateX(0px)');
-    }   
-  }
-
-  function changeBg(el) {
-    const imgWidth = el.width();
-    let $imgBgWidth = $('.imgWrapper').width();
-    let $scrolled = $('html, body').scrollTop();
-    let elementOffset = el.offset().top; 
-    let height = $(window).height(); 
-    let distance = elementOffset - $scrolled;   
-    
-    if (distance + 100 < height && distance > 0) {      
-      let shift = 0-($scrolled*.1) + imgWidth;     //.05  0-($scrolled*1) + imgWidth; 
-      let w = - shift + 'px';
-      //let w = -shift * imgWidth/100 + 'px';
-      // console.log('$scrolled', $scrolled);
-      // console.log('shift', shift);
-      //console.log('%', $scrolled/$imgBgWidth*5);
-      //console.log('width', w);
-      $('.imgWrapper').css('width', w);
-    }   
-  }
+  if ($(window).width() >= 767) {
+    sticky();
+    animation();
+  }   
+  $(window).resize(function() {
+    if ($(window).width() >= 767) {
+      sticky();
+      animation();
+    }
+  })    
 }

@@ -1,16 +1,17 @@
 mixin section-services
 	section.section.section-services#section-services
 		.container
-			.services.row.align-items-end
+			.services.row
 				.col-xl-5.col-lg-6.col-md-7.col-ms-12.offset-xl-1
-					.services__img
-						img(src="./images/services.svg", alt="image")
-					h2.services__title Вместе мы можем создать историю вашего бизнес успеха
-					p.services__descr Наша миссия - создавать продукты для клиентов. Предоставляем готовые решения для рынка и поддерживаем их.
+					.stickyBlock
+						h2.services__title We will write your business success story together
+						p.services__descr Our mission is to do everything to make your product identifiable and your brand - successful.
 				.col-xl-4.col-lg-5.col-md-5.col-ms-12.offset-lg-1
 					ul.services__list
 						each item, i in data.servicesEN
 							li.services__item
 								.services__item-number= `0${i + 1}`
 								.services__item-title= item.title
-								.services__item-text= item.text
+								.services__item-text
+									each p in item.text
+										div= p

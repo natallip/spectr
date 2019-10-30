@@ -1,44 +1,52 @@
 {
   "services": [
-    {"title": "Стратегия", "text": "Создаём имидж бренда и разрабатываем стратегию развития бизнеса в интернете."},
-    {"title": "Реклама", "text": "Занимаемся всесторонним медиа продвижением и разработкой рекламных компаний. В том числе в сфере Influence и событийного маркетинга."},
-    {"title": "Брендинг", "text": "Разрабатываем уникальные графические и текстовые решения для брендов, проектов, продуктов."},
-    {"title": "Сайты", "text": "Разрабатываем сайты — сильнейшие инструменты продвижения вашего бренда."}
+    {"title": "Stratery", "text": ["Брендинг", "Стратегии присутствия в социальных сетях", "Коммуникационная стратегия", "Креативная стратегия", "Управление репутацией"]},
+    {"title": "SMM", "text": ["Контент-маркетинг", "Комьюнити-менеджмент", "Таргетированная реклама", "Influencer-маркетинг"]},
+    {"title": "Web", "text": ["Разработка и развитие сайтов", "SEO-оптимизация"]},
+    {"title": "Digital", "text": ["Контекстная реклама", "Баннерная (медийная) реклама", "YouTube-канал под ключ", "Email-маркетинг"]},
+    {"title": "Design", "text": ["Графический дизайн", "Motion-дизайн", "AR-маски для социальных сетей"]},
+    {"title": "Production", "text": ["Фотопродакшн", "Видеопродакшн", "События"]}
   ],
   "works": [
-    {"title": "Kazzarma Mall", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Молочный мир", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "5 копеек", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"}
-  ],
-  "worksMore": [
-    {"title": "Kazzarma Mall", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Молочный мир", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "5 копеек", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"},
-    {"title": "Unistrade", "descr": "Все самое сладкое и вкусное", "vk": "#", "inst": "#", "fb": "#"}
+    {"title": "Гарадзенскi маёнтак Каробчыцы", "descr": "Агротуристический комплекс в Беларуси", "inst": "https://www.instagram.com/maentak.grodno/"},
+    {"title": "Молочный Мир", "descr": "Ведущий производитель молочных продуктов в Беларуси", "inst": "https://www.instagram.com/molochnyimir/"},
+    {"title": "Городейский сахарный комбинат", "descr": "Ведущий производитель сахара в Беларуси", "inst": "https://www.instagram.com/gsrby_official/"},
+    {"title": "Гроднохлебпром", "descr": "Основной производитель хлебобулочных изделий в Гродненской области", "inst": "https://www.instagram.com/grodnohlebprom/"},
+    {"title": "Юнистрейд", "descr": "Производитель премиальных систем ограждений, кровельных материалов и мебели LOFT", "inst": "https://www.instagram.com/unistrade/"},
+    {"title": "ACCENT", "descr": "Гродненская перчаточная фирма", "inst": "https://instagram.com/perchatka.accent/"},
+    {"title": "Sweetmix", "descr": "Первая в Беларуси компания по продаже мармелада в формате Pick&Mix", "inst": "https://www.instagram.com/sweetmix.by/"},     
+    {"title": "АзотХимФортис", "descr": "Крупнейший производитель химической продукции", "inst": "https://instagram.com/azotfortis.by/"},  
+    {"title": "POPPY", "descr": "Торговая марка гигиенических средств из бумаги", "inst": "https://instagram.com/poppy.bumaga/"}
   ],
   "footerLinks": [
-    {"name": "spektr group", "link": "#"},
-    {"name": "spektr next", "link": "#"}
+    {"name": "spektr group", "link": "https://www.instagram.com/spektr_group/"},
+    {"name": "spektr next", "link": "http://spektrnext.su/"}
   ],
   "socials": [
-    {"icon": "linkedin", "link": "#"},
-    {"icon": "fb", "link": "#"},
-    {"icon": "dribble", "link": "#"},
-    {"icon": "inst", "link": "#"},
-    {"icon": "behance", "link": "#"},
-    {"icon": "youtube", "link": "#"}
+    {"icon": "linkedin", "link": "https://www.linkedin.com/groups/8831381/"},
+    {"icon": "fb", "link": "https://www.facebook.com/spektrdigital/"},
+    {"icon": "dribble", "link": "https://www.dribbble.com/spektr-digital/"},
+    {"icon": "inst", "link": "https://www.instagram.com/spektr.digital/"},
+    {"icon": "behance", "link": "https://www.behance.net/spektrdigital/"},
+    {"icon": "youtube", "link": "https://www.youtube.com/channel/UCoIRDaE5hR9ezfNc-cJIuFw"}
   ],
   "servicesEN": [
-    {"title": "Strategy", "text": "Создаём имидж бренда и разрабатываем стратегию развития бизнеса в интернете."},
-    {"title": "Advertising", "text": "Занимаемся всесторонним медиа продвижением и разработкой рекламных компаний. В том числе в сфере Influence и событийного маркетинга."},
-    {"title": "Branding", "text": "Разрабатываем уникальные графические и текстовые решения для брендов, проектов, продуктов."},
-    {"title": "Sites", "text": "Разрабатываем сайты — сильнейшие инструменты продвижения вашего бренда."}
-  ] 
+    {"title": "Stratery", "text": ["Brand strategy", "Social media presence strategy", "Communication strategy", "Creative strategy", "Reputation management strategy"]},
+    {"title": "SMM", "text": ["Content-marketing", "Community-management", "Targeted advertising", "Influencer marketing"]},
+    {"title": "Web", "text": ["Website development and support", "Search Engine Optimization"]},
+    {"title": "Digital", "text": ["Search engine advertising", "Banner (media) advertising", "YouTube Channel on a turnkey basis", "Email Marketing"]},
+    {"title": "Design", "text": ["Graphic design", "Motion design", "AR Masks for social nets"]},
+    {"title": "Production", "text": ["Photo production", "Video production", "Reportage"]}
+  ],
+  "worksEN": [
+    {"title": "Grodno City Estate \"Korobchitsy\"", "descr": "Agritouristic facility in Belarus", "inst": "https://www.instagram.com/maentak.grodno/"},
+    {"title": "Molochny Mir", "descr": "Leading manufacturer of dairy products in Belarus", "inst": "https://www.instagram.com/molochnyimir/"},
+    {"title": "Gorodeya Sugar Refinery", "descr": "The largest sugar producer in Belarus", "inst": "https://www.instagram.com/gsrby_official/"},
+    {"title": "Grodnohlebprom", "descr": "The main producer of bakery products in the Grodno region", "inst": "https://www.instagram.com/grodnohlebprom/"},
+    {"title": "Unistrade", "descr": "The largest manufacturer of fences, roofing, drainage and ventilation systems, loft furniture in Belarus", "inst": "https://www.instagram.com/unistrade/"},
+    {"title": "ACCENT", "descr": "Grodno gloves firm", "inst": "https://instagram.com/perchatka.accent/"},
+    {"title": "Sweetmix", "descr": "The first company in Belarus selling marmalade in Pick&Mix format", "inst": "https://www.instagram.com/sweetmix.by/"},     
+    {"title": "AzotKhimFortis", "descr": "The largest manufacturer of chemical products", "inst": "https://instagram.com/azotfortis.by/"},  
+    {"title": "POPPY", "descr": "Paper hygiene brand", "inst": "https://instagram.com/poppy.bumaga/"}
+  ]
 }

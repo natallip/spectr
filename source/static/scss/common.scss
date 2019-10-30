@@ -38,11 +38,14 @@ img {
     min-height: 100vh;
     flex-direction: column;
     position: relative;
-    transition: .5s ease-in-out;       
+    transition: .5s ease-in-out;         
   }
 }
 section {
-  position: relative;  
+  position: relative;
+  @include media768 {
+    padding-left: 56px;
+  }    
 }
 ul, li {
   margin: 0;
@@ -50,155 +53,9 @@ ul, li {
   list-style: none;
 }
 a {
-  text-decoration: none;
-  //color: $text;
+  text-decoration: none;  
 }
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
 }
-// .container {
-//   width: 1200px;
-//   height: 100%;
-//   padding: 100px 15px;
-//   height: 100%;
-//   margin: 0 auto;
-//   position: relative;
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 15px;
-//     width: 1px;
-//     height: 100%;
-//     border-left: 1px solid rgba(#fff,.06);
-//     @include media980 {
-//       display: none;  
-//     }
-//   }
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 55%;
-//     width: 1px;
-//     height: 100%;
-//     border-left: 1px solid rgba(#fff,.06);
-//     @include media980 {
-//       display: none;  
-//     }
-//   }
-//   @include media1200 {
-//     width: 980px;
-//     padding: 50px 15px;
-//   }
-//   @include media980 {
-//     width: 767px;    
-//   }
-//   @include media768 {
-//     width: 480px;
-//   }
-//   @include media480 {
-//     width: 320px;
-//   }
-// }
-button, input {
-  border: none;
-  outline: none;
-  background: transparent;
-}
-// .title {
-//   font-size: 48px;
-//   text-transform: uppercase;
-//   margin-bottom: 40px;
-//   font-family: 'Montserrat Bold';
-//   position: relative;
-//   @include media1200 {
-//     font-size: 28px;
-//   }
-//   @include media480 {
-//     margin-bottom: 30px;
-//   }
-//   &::before {
-//     position: absolute;
-//     content: '';
-//     border-left: 1px solid #f13f3f;
-//     top: 15px;
-//     left: -30px;
-//     height: 35px;
-//     @include media1200 {
-//       top: 0px;
-//     }
-//     @include media980 {
-//       display: none;
-//     }
-//   }
-// }
-// .text {  
-//   margin-bottom: 20px;
-//   color: $gray;
-//   &--white {
-//     font-size: 18px;
-//     line-height: 1.5;
-//     margin-bottom: 20px;
-//   }
-// }
-
-// .btn {
-//   display: inline-block;
-//   position: relative;
-//   font-family: 'Montserrat Bold';
-//   color: $text;
-//   padding: 11px 32px;
-//   font-size: 14px;
-//   line-height: 24px;
-//   letter-spacing: .5px;
-//   text-transform: uppercase;
-//   white-space: nowrap;
-//   text-align: center;  
-//   vertical-align: middle;
-//   background-color: transparent;
-//   overflow: hidden;
-//   cursor: pointer;
-//   z-index: 1;
-//   transition: .25s all ease-in-out;
-//   @include media768 {
-//     font-family: 'Montserrat Regular';
-//   }
-//   &::before {
-//     content: '';
-//     width: 70%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     background: $accent;
-//     z-index: -1;
-//     transition: .25s all ease-in-out;    
-//   }
-//   &:hover::before{
-//     width: 100%;    
-//   }
-// }
-// .col-l {
-//   width: 55%;  
-//   @include media980 {
-//     width: 100%;
-//   }     
-// }
-// .col-s {
-//   width: 45%;
-//   padding-left: 32px;
-//   @include media980 {
-//     width: 100%;
-//     padding-left: 0;
-//   }   
-// }
-// .section__wrap {
-//   display: flex; 
-//   @include media980 {
-//     flex-direction: column;
-//   }  
-// }

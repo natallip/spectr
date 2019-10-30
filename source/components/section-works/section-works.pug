@@ -2,13 +2,8 @@ mixin section-works
 	section.section.section-works#section-works
 		.container
 			.row
-				.col-xl-10.offset-xl-1.works__img
-					//-.imgWrapper W-W-WORKS
-					img#imgWorks(src="./images/works.svg", alt="image")
+				.works__img.col-xl-10.offset-xl-1.col-12
 				ul.col-xl-10.col-lg-12.col-12.offset-xl-1.works__list
 					each item in data.works
 						+work(item)
-					ul.works__more
-						each itemMore in data.worksMore
-							+work(itemMore)
-				a#more(href="#").col-xl-10.col-lg-12.col-12.offset-xl-1.works__btn-more Больше наших работ &#8250;
+				//-a#more(href="#").col-xl-10.col-lg-12.col-12.offset-xl-1.works__btn-more Больше наших работ &#8250;
